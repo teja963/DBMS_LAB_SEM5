@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+      <title>Student Registration Form</title>
+      <link rel="stylesheet" type="text/css" href="1.css">
+    </head>
+    <body>
+        <div class="info-title">
+            <h1>Welcome to the Form</h1>
+            <h2>Please fill the form to regsiter</h2>
+        </div>
+
+        <form action="2.php" method="POST">
+            <label>Search</label>
+            <input type="text" name="query_search" required>
+            <input type="submit" name="find">
+        </form>
+
+        <div class="info-form">
+            <form action="1.php" method="POST">
+                <label>Your Name</label><input type="text" id="Name" name="name" placeholder="Enter your name" class="data" required><br>
+                <label>Roll number</label><input type="text" min="9" id="Roll number" name="roll" placeholder="Enter your rollnumber" class="data" required><br>
+                <label>Date of birth</label><input type="date" id="DOB" name="DOB" placeholder="Enter your dateofbirth" class="data" required><br>
+                <label>Mobile </label><input type="text" maxlength="12" id="Mobile" name="mobile" placeholder="Enter your Mobilenumber" class="data" required><br>
+                <label>E-mail id</label><input type="email" id="email" name="email" placeholder="Enter valid Email Address" class="data" required><br>
+                <label>SGPA_1</label><input type="number" step="0.01" min="0.00" max="10.00" id="SGPA1" name="SGPA1" placeholder="Enter upto 2 decimals" class="data" required><br>
+                <label>SGPA_2</label><input type="number" step="0.01" min="0.00" max="10.00" id="SGPA2" name="SGPA2" placeholder="Enter upto 2 decimals" class="data" required><br>
+                <label>SGPA_3</label><input type="number" step="0.01" min="0.00" max="10.00" id="SGPA3" name="SGPA3" placeholder="Enter upto 2 decimals" class="data" required><br>
+                <label>SGPA_4</label><input type="number" step="0.01" min="0.00" max="10.00" id="SGPA4" name="SGPA4" placeholder="Enter upto 2 decimals" class="data" required><br>
+                <label>SGPA_5</label><input type="number" step="0.01" min="0.00" max="10.00" id="SGPA5" name="SGPA5" placeholder="Enter upto 2 decimals" class="data" required><br>
+                <label>SGPA_6</label><input type="number" step="0.01" min="0.00" max="10.00" id="SGPA6" name="SGPA6" placeholder="Enter upto 2 decimals" class="data" required><br>
+                <label>SGPA_7</label><input type="number" step="0.01" min="0.00" max="10.00" id="SGPA7" name="SGPA7" placeholder="Enter upto 2 decimals" class="data" required><br>
+                <label>SGPA_8</label><input type="number" step="0.01" min="0.00" max="10.00" id="SGPA8" name="SGPA8" placeholder="Enter upto 2 decimals" class="data" required><br>
+                <label>CGPA</label><input type="number" step="0.01" min="0.00" max="10.00" id="CGPA" name="CGPA" placeholder="Enter upto 2 decimals" class="data" required><br>
+                <label>Address</label><textarea type="text" id="Address" name="Address" placeholder="Enter valid Address" class="data" rows="5"; cols="60"; required></textarea><br>
+                <label>Hobbies</label><textarea type="text" id="Hobbies" name="Hobbies" placeholder="Enter your hobbies" class="data" rows="4"; cols="50"; required></textarea><br>
+                <label>Reference</label><textarea type="text" id="references" name="references" placeholder="Enter your references" class="data" rows="4"; cols="50"; required></textarea><br>
+                <label class="radio-inline">Day-Scholar</label><input type="radio" name="stay" id="Day-Scholar" value="D"><br>
+                <label class="radio-inline">Hosteler</label><input type="radio" name="stay" id="Hosteler" value="H"><br>
+                <button type="reset">Reset</button>
+                <input type="submit" name="submit">
+
+            </form>
+        </div>
+
+
+
+
+    </body>
+</html>

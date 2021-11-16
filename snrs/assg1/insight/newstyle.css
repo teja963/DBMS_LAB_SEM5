@@ -1,0 +1,54 @@
+body{
+     margin: 0;
+     padding: 0;
+     text-align: center;
+     background: linear-gradient(rgba(0,0,50,0.5),rgba(0,0,50,0.5)),url(3.jpeg);
+     background-size: cover;
+     background-position: center;
+     font-family: all;
+}
+.info-title 
+{
+       margin-top: 50px;
+       color: #fff;
+       text-transform: uppercase;
+       text-decoration: unset;  
+       transition: all  2s ease-in-out;
+}
+.info-title h1{
+    font-size: 32px;
+    line-height: 10px;
+}
+.info-title h2
+{
+     font-size: 16px;
+}
+form
+{
+margin-top: 5px;
+margin-bottom: 5px;
+transition: all 2s ease-in-out;
+}
+
+.form-control
+{
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+    width:600px;
+    background: #fff;
+    border:groove;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-style: white;
+    outline:transparent;
+    border-bottom: 1px solid white;
+    color:#000000;
+    margin-top: 10px;
+    font-size: 14px;
+    margin-bottom: 10px; 
+  
+}

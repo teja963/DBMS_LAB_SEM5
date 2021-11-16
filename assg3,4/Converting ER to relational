@@ -1,0 +1,80 @@
+Rules for converting ER TO RELATIONAL
+
+1. A strong Entity set with **only simple attributes** will require only 1 table in relational model.
+
+                                           Student
+   1Roll num   Name                       _ _ _ _ _ _ _ _ _ _ _ 
+     /       /     Sex                   | Roll num| Name| Sex |
+   _/ _ _ _ /  _ _/                      |         |     |     |
+  | Student | /                          |_ _ _ _ _|_ _ _|_ _ _|
+  |_ _ _ _ _|/                           
+
+2. A strong entity set with any number of **composite attributes** will require only **one table** in relational model.(attributes r just simple attributes)
+
+    
+                   Street  D.No
+                        \/ 
+          First  Last   /\
+               \/      /  Pincode
+               /      /                   Student
+  1Roll num   Name   /                    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+     /       /     Address               |Roll num |First|Secnd|Street|D.No| PinCode |
+   _/ _ _ _ /  _ _/                      |         |     |     |      |    |         | 
+  | Student | /                          |_ _ _ _ _|_ _ _|_ _ _|_ _ _ |_ _ |_ _ _ _ _|
+  |_ _ _ _ _|/                           
+
+3. A strong entity set with any number of **multivalued attributes** will require **2 tables** in relational model.(^ Multi valued)
+  
+                        ^ ^ ^  ^               Student
+   1Roll num  Name     ^ Hobby   ^          _ _ _ _ _ _ _ _ 
+     /       /     ___^          ^         | Roll num| Name|
+   _/ _ _ _ /  _ _/    ^  ^  ^  ^          |         |     |     
+  | Student | /                            |_ _ _ _ _|_ _ _|
+  |_ _ _ _ _|/
+    
+                                             Student
+                                            _ _ _ _ _ _ _ _ _ 
+                                           | Roll num| Hobby |
+                                           |         |       |     
+                                           |_ _ _ _ _|_ _ _ _|
+                                          
+4. A relationship set will require one table in the relational model
+   Attributes of the table are
+   (i) Primary key attributes of the participating entity set .Its own descriptive attributes if any
+   
+                                                        
+                                     Since     
+                                       |
+                                       |      
+                       Emp_name       /\                         
+       1Emp_num             /        /  \                    1Dept_id          
+              \            /        /    \                      /
+               \ _ _ _ _ _/        /      \         _ _ _ _ _ _/         
+                | Empolye |_ _ _ _/  Works \_ _ _ _|   Dept    |          
+                |_ _ _ _ _|       \   In   /       |_ _ _ _ _ _|    
+               /                   \      /                     \
+              /                     \    /                       \
+       Salary                        \  /                        Dept_name
+                                      \/
+                                      
+                                      
+                                      
+              Empolye                      Works In                    Dept
+        _ _ _ _ _ _ _ _ _ _ _ _      _ _ _ _ _ _ _ _ _ _ _       _ _ _ _ _ _ _ _ _                  
+       |Emp_num|Emp_name|Salary|    |Emp_num|Dept_id|Since|     |Dept_id|Dept_name|     
+       |       |        |      |    |       |       |     |     |       |         |
+       |_ _ _ _|_ _ _ _ |_ _ _ |    |_ _ _ _| _ _ _ |_ _ _|     |_ _ _ _|_ _ _ _ _|
+       
+      
+ NOTE: 
+ 1. Check the cardinalities for a given for given relational set and derive the num of tables required for participation
+               
+               
+               
+               
+               
+               
+   
+   
+      
+   
